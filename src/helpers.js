@@ -1,3 +1,6 @@
+export const waait = () => new Promise(res => setTimeout(res, Math.random() * 2000))
+
+//设置颜色的值以随机化 65% 50%为hls百分比
 const generateRandomColor = () => {
     const existingBudgetLength = fetchData("budgets")?.length ?? 0;
     return `${existingBudgetLength * 34} 65% 50%`
